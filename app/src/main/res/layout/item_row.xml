@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="10"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textSize="18dp"
+        android:clickable="true"
+        android:onClick="onClick"/>
+    <TextView
+        android:id="@+id/item_detail"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="10"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textSize="18dp"
+        />
+
+    <ImageButton
+        android:id="@+id/item_done"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="false"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:onClick="taskDone"
+        android:src="@drawable/ic_action_done" />
+
+    <ImageButton
+        android:id="@+id/item_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="false"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:onClick="taskDeleted"
+        android:src="@drawable/ic_action_delete" />
+
+
+</LinearLayout>
